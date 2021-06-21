@@ -2,26 +2,34 @@
 
 **INSPIRED BY TOGGLE IOS**
 
-This component helps to highlight that you are in development mode by display a debug label in the top-right of your screen.
+This component helps to active or inactive.
 
 ## Installation
 
-`npm install debug-flag`
+`npm install rc-swicher`
 
 or
 
-`yarn add debug-flag`
+`yarn add rc-swicher`
 
 ## Usage
 
-YOU JUST INSERT `<DebugFlag />` INTO YOUR JSX OR TSX FILE AND ENJOY.
+Note: id, checked and onChange are required for Switcher component to function. The props name, small, disabled and optionLabels are optional.
+
+Usage: <VBSwitcher id="id" checked={value} onChange={checked => setValue(checked)}} />
 
 ```
-import { DebugFlag } from 'debug-flag';
+import Switcher from 'rc-switcher';
 
+<Switcher
+  id="active"
+  name="active"
+  checked
+  onChange={() => {}}
+/>
 ReactDOM.render(<DebugFlag />, document.getElementById('root'));
 ```
 
 ## Screenshot
 
-![screenshot](https://raw.githubusercontent.com/aholake/debug-flag/master/screenshot.png 'screenshot')
+![screenshot](https://user-images.githubusercontent.com/43688618/122758335-e147ce80-d2c2-11eb-99b4-0bccacfefc36.png 'screenshot')
