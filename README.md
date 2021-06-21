@@ -16,7 +16,7 @@ or
 
 Note: id, checked and onChange are required for Switcher component to function. The props name, small, disabled and optionLabels are optional.
 
-Usage: <VBSwitcher id="id" checked={value} onChange={checked => setValue(checked)}} />
+Usage: <Switcher id="id" checked={value} onChange={checked => setValue(checked)}} />
 
 ```
 import Switcher from 'rc-switcher';
@@ -27,7 +27,7 @@ import Switcher from 'rc-switcher';
   checked
   onChange={() => {}}
 />
-ReactDOM.render(<DebugFlag />, document.getElementById('root'));
+
 ```
 
 ## Screenshot
